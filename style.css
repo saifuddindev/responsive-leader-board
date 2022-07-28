@@ -1,0 +1,170 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Josefin+Sans&family=Poppins:wght@400;500&display=swap');
+
+/* Utilities */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+
+/* Top Players Style  */
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.player {
+    display: flex;
+
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+.section-title {
+    font-size: 24px;
+    color: #562EFF;
+    margin-top: 3px;
+}
+
+.player-name {
+    margin-left: 16px;
+    font-size: 16px;
+}
+
+/* top blogs styles */
+.blog {
+    display: flex;
+}
+
+.blog .blog-info {
+    margin-left: 10px;
+}
+
+.blog .thumnail img {
+    width: 224px;
+    height: 127px;
+}
+
+.blog-author a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.blog-author {
+    font-size: 20px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+
+/* ---------------------
+Latest Courses 
+------------------------*/
+.course-banner {
+    width: 224px;
+    height: 104px;
+}
+
+.course-title {
+    font-size: 20.0336px;
+}
+
+.course-author {
+    font-size: 14.6913px;
+    color: #ED6B4F;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-duration {
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    color: #FF4A60;
+    padding: 5px;
+}
+
+.courses-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 28px;
+}
+
+/* -------------------------
+         Media Queries 
+         ----------------------*/
+@media only screen and (max-width: 688px) {
+
+    .players,
+    .blogs,
+    .courses-area {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .player,
+    .blogs,
+    .courses-area {
+        justify-content: center;
+    }
+}
+
+/* tablet Devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .player,
+    .blogs,
+    .courses-area {
+        justify-content: center;
+    }
+}
